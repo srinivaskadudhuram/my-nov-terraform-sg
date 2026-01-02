@@ -15,7 +15,7 @@ resource "aws_vpc_security_group_ingress_rule" "myingressrules" {
   cidr_ipv4 = "0.0.0.0/0"
 }
 resource "aws_key_pair" "myownkey" {
-  public_key = file("~/.ssh/id_ed25519.pub")
+  public_key = file("~/id_ed25519.pub")
   key_name = "myshownkey"
   
 }
